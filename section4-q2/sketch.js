@@ -46,7 +46,7 @@ function draw(){
 function star(cx, cy, r,angle){
   beginShape();
   for(var i = 0; i < 5; i++){
-  theta = TWO_PI * i * 2 / 5 - (HALF_PI + angle);
+  var theta = TWO_PI * i * 2 / 5 - (HALF_PI + angle);
   console.log(theta);
     // BLANK[1] (hint: angle 分だけ星を回転させるには？)
     var x = cx + cos(theta) * r;
