@@ -50,6 +50,9 @@ function draw(){
   if(keyIsDown(UP_ARROW)){ y1 -= 3; }
   if(keyIsDown(DOWN_ARROW)){ y1 += 3; }
 
+  x1 = constrain(x1, 0, width);
+  y1 = constrain(y1, 0, height);
+
   if(dist(x,y,x1,y1) < r){
     textSize(width/10);
     fill(240,0,0);
