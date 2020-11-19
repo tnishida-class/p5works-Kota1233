@@ -82,5 +82,3 @@ function star(cx, cy, r,angle){
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
-
-if(keyIsDown(Enter)){ Loop()}
